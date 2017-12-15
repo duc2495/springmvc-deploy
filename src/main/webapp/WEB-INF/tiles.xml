@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+      "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+      "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- Base Define -->
+	<definition name="base.definition" template="/WEB-INF/layouts/layout-default.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/layouts/header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/layouts/body-empty.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/layouts/footer.jsp" />
+	</definition>
+
+	<!-- Home Page -->
+	<definition name="homePage" extends="base.definition">
+		<put-attribute name="title" value="ホームページ" />
+		<put-attribute name="body" value="/WEB-INF/view/homepage.jsp" />
+	</definition>
+
+	<!-- Survey Page -->
+	<definition name="surveyForm" extends="base.definition">
+		<put-attribute name="title" value="アンケートページ" />
+		<put-attribute name="header" value="/WEB-INF/view/survey-header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/view/survey-form.jsp" />
+		<put-attribute name="footer" value="" />
+	</definition>
+
+	<!-- View Survey Page -->
+	<definition name="viewSurveys" extends="base.definition">
+		<put-attribute name="title" value="アンケートページ" />
+		<put-attribute name="body" value="/WEB-INF/view/viewsurveys.jsp" />
+	</definition>
+
+	<!-- Thanks Page -->
+	<definition name="thankPage" extends="base.definition">
+		<put-attribute name="title" value="ありがたい" />
+		<put-attribute name="header" value="/WEB-INF/view/survey-header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/view/thanks-survey.jsp" />
+		<put-attribute name="footer" value="" />
+	</definition>
+
+	<!-- Error Page -->
+	<definition name="errorPage" extends="base.definition">
+		<put-attribute name="title" value="エラーページ" />
+		<put-attribute name="header" value="" />
+		<put-attribute name="body" value="/WEB-INF/view/error-body.jsp" />
+		<put-attribute name="footer" value="" />
+	</definition>
+
+
+</tiles-definitions>

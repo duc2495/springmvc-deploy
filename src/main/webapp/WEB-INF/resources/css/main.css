@@ -1,0 +1,183 @@
+/* Set default page style */
+body {
+	background-color: #ede7f6;
+}
+
+.navbar {
+	background-color: rgb(103, 58, 183);
+	margin-bottom: 0;
+	border-radius: 0;
+	min-height: 5%;
+}
+
+.text-left {
+	background-color: #ffffff;
+}
+
+footer {
+	background-color: rgb(103, 58, 183);
+	color: white;
+	padding-top: 15px;
+	min-height: 5%;
+}
+/* End of set default page style */
+.survey-content {
+	margin-top: -5%;
+	margin-bottom: 5%;
+	padding-bottom: 20px;
+}
+/* Set home page style */
+.home-content {
+	min-height: 90%;
+}
+/* End of set home page style */
+
+/* Set survey page style */
+.survey-header {
+	background-color: rgb(103, 58, 183);
+	height: 25%;
+	color: rgba(255, 255, 255, 1);
+}
+
+.checkbox input[type=checkbox], .radio input[type=radio] {
+	margin-left: 0px;
+}
+
+.checkbox, .radio {
+	margin-top: 0px;
+}
+
+.free-bg {
+	background-color: rgb(179, 136, 255);
+	height: 10px;
+	margin-left: -15;
+	margin-right: -15;
+}
+
+.red-label {
+	color: #db4437;
+	padding-right: 5px;
+}
+
+.checkbox label, .radio label {
+	padding-left: 30px;
+}
+
+.option-input {
+	-webkit-appearance: none;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	transition: all 0.15s ease-out 0s;
+	background: #cbd1d8;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	margin-right: 0.5rem;
+	outline: none;
+	z-index: 1000;
+}
+
+.option-input:hover {
+	background: #9faab7;
+}
+
+.option-input:checked {
+	background: #40e0d0;
+}
+
+.option-input:checked::before {
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	content: '✔';
+	display: inline-block;
+	font-size: 16px;
+	text-align: center;
+	line-height: 20px;
+	border: none;
+}
+
+.option-input:checked::after {
+	background: #40e0d0;
+	content: '';
+	display: block;
+	position: relative;
+	z-index: 100;
+}
+
+.option-input.radio {
+	border-radius: 50%;
+}
+
+.option-input.radio::after {
+	border-radius: 50%;
+}
+
+.button {
+	padding-left: 25px;
+	padding-right: 25px;
+	display: block;
+	margin: 0 auto;
+}
+
+.form-group {
+	margin-bottom: 30px;
+}
+/* End of set survey page style */
+
+/* Set error page style */
+#fof {
+	display: block;
+	width: 100%;
+	margin: 100px 0;
+	line-height: 1.6em;
+	text-align: center;
+}
+
+#fof .hgroup {
+	text-transform: uppercase;
+}
+
+#fof .hgroup h1 {
+	margin-bottom: 25px;
+	font-size: 80px;
+}
+
+#fof .hgroup h1 span {
+	display: inline-block;
+	margin-left: 5px;
+	padding: 2px;
+	border: 1px solid #CCCCCC;
+	overflow: hidden;
+}
+
+#fof .hgroup h1 span strong {
+	display: inline-block;
+	padding: 0 20px 20px;
+	border: 1px solid #CCCCCC;
+	font-weight: normal;
+}
+
+#fof .hgroup h2 {
+	font-size: 60px;
+}
+
+#fof .hgroup h2 span {
+	display: block;
+	font-size: 30px;
+}
+
+#fof p {
+	margin: 25px 0 0 0;
+	padding: 0;
+	font-size: 16px;
+}
+
+#fof p:first-child {
+	margin-top: 0;
+}
+/* End of set error page style */
